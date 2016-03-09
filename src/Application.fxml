@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WorkSpace">
+   <top>
+      <VBox prefHeight="81.0" prefWidth="981.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="74.0" prefWidth="971.0" spacing="14.0">
+               <children>
+                  <Button fx:id="New" mnemonicParsing="false" prefHeight="67.0" prefWidth="74.0" text="New">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/label_blue_new%20(1).png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Separator orientation="VERTICAL" prefHeight="65.0" prefWidth="2.0" />
+                  <Button fx:id="Load" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" text="Open">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/1450580343_Open-Sign.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="Savepro" mnemonicParsing="false" prefHeight="74.0" prefWidth="69.0" text="SaveProject">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/1450581261_save.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="Save" layoutX="50.0" layoutY="15.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="67.0" text="SaveImage">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/image_x_photo_cd.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="Undo" disable="true" layoutX="129.0" layoutY="15.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="73.0" text="Undo">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/14505598617460.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="Redo" disable="true" layoutX="186.0" layoutY="15.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="61.0" text="Redo">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/1450581368_47.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Separator orientation="VERTICAL" prefHeight="61.0" prefWidth="0.0" />
+                  <VBox spacing="10.0">
+                     <children>
+                        <Label text="X" fx:id="x1">
+                           <textFill>
+                              <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.6523809523809524" startY="0.3666666666666667">
+                                 <stops>
+                                    <Stop color="#7238f2" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill></Label>
+                        <Label fx:id="y1" text="Y">
+                           <textFill>
+                              <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.6523809523809524" startY="0.3666666666666667">
+                                 <stops>
+                                    <Stop color="#7238f2" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill></Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <effect>
+                  <ColorAdjust brightness="-0.07" />
+               </effect>
+            </HBox>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="411.0" prefWidth="183.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox>
+               <children>
+                  <HBox spacing="62.0">
+                     <children>
+                        <Label text="Width">
+                           <font>
+                              <Font name="Constantia" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.5333333333333333" startY="0.17142857142857143">
+                                 <stops>
+                                    <Stop color="#7238f2" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill></Label>
+                        <Label text="Height">
+                           <textFill>
+                              <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.5333333333333333" startY="0.17142857142857143">
+                                 <stops>
+                                    <Stop color="#7238f2" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill></Label>
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0">
+                     <children>
+                        <TextField fx:id="Width" />
+                        <TextField fx:id="Height" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <HBox>
+               <children>
+                  <Label text="shape">
+                     <textFill>
+                        <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.5238095238095238" startY="0.17142857142857143">
+                           <stops>
+                              <Stop color="#7238f2" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Constantia" size="12.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="179.0" spacing="30.0">
+               <children>
+                  <Button fx:id="Import" mnemonicParsing="false" prefHeight="36.0" prefWidth="39.0" text="import">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/1450584894_free-10.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <ChoiceBox fx:id="shapeList" prefHeight="37.0" prefWidth="81.0">
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" choke="0.13" color="#594add" height="41.76" radius="27.792499999999997" width="71.41" />
+                     </effect></ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="19.0" prefWidth="38.0" text="Color">
+               <textFill>
+                  <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.5238095238095238" startY="0.17142857142857143">
+                     <stops>
+                        <Stop color="#7238f2" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></Label>
+            <HBox spacing="40.0">
+               <children>
+                  <ColorPicker fx:id="fillColors" prefHeight="25.0" prefWidth="42.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow choke="0.21" color="#3838f2" height="26.93" radius="11.4825" />
+                     </effect>
+                  </ColorPicker>
+                  <ColorPicker fx:id="strokesolors" layoutX="128.0" layoutY="10.0" prefHeight="25.0" prefWidth="38.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow choke="0.36" color="#4240e5" height="26.93" radius="15.93" width="38.79" />
+                     </effect>
+                  </ColorPicker>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <CheckBox fx:id="transparent" mnemonicParsing="false" text="transparent">
+                     <font>
+                        <Font name="Constantia" size="12.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#5366d3" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#295dbf" />
+                     </effect></CheckBox>
+                  <CheckBox fx:id="transparent1" mnemonicParsing="false" text="transparent">
+                     <font>
+                        <Font name="Constantia" size="12.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#5366d3" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#295dbf" />
+                     </effect></CheckBox>
+               </children>
+            </HBox>
+            <HBox layoutX="12.0" layoutY="45.0" spacing="20.0">
+               <children>
+                  <CheckBox fx:id="random" mnemonicParsing="false" text="random">
+                     <font>
+                        <Font name="Constantia" size="12.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#5366d3" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#295dbf" />
+                     </effect></CheckBox>
+                  <CheckBox fx:id="random1" mnemonicParsing="false" text="random">
+                     <font>
+                        <Font name="Constantia" size="12.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#5366d3" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#295dbf" />
+                     </effect></CheckBox>
+               </children>
+            </HBox>
+            <Label text="Opacity">
+               <textFill>
+                  <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.6523809523809524" startY="0.3666666666666667">
+                     <stops>
+                        <Stop color="#7238f2" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></Label>
+            <HBox prefHeight="33.0" prefWidth="179.0">
+               <children>
+                  <Slider fx:id="opacity" blockIncrement="0.1" majorTickUnit="0.25" max="1.0" minorTickCount="0" prefHeight="7.0" prefWidth="179.0" showTickLabels="true" showTickMarks="true" value="0.5">
+                     <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="10.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children>
+               <effect>
+                  <InnerShadow color="#446ac2" />
+               </effect>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="37.0" prefWidth="179.0" spacing="20.0">
+               <children>
+                  <Button fx:id="fill" mnemonicParsing="false" prefHeight="40.0" prefWidth="68.0" text="fill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/color_fill.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="strok" mnemonicParsing="false" prefHeight="40.0" prefWidth="78.0" text="Stroke">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/color_line.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+               </children>
+            </HBox>
+            <Separator prefHeight="13.0" prefWidth="179.0" />
+            <HBox spacing="50.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="68.0" text="font">
+                     <textFill>
+                        <LinearGradient endX="0.6523809523809524" endY="1.0" startX="0.5333333333333333" startY="0.17142857142857143">
+                           <stops>
+                              <Stop color="#7238f2" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Constantia" size="12.0" />
+                     </font></Label>
+                  <ChoiceBox fx:id="font" prefHeight="25.0" prefWidth="106.0">
+                     <effect>
+                        <InnerShadow choke="0.1" color="#3a38f4" height="29.9" radius="16.6725" width="38.79" />
+                     </effect></ChoiceBox>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="40.0" prefWidth="179.0" spacing="10.0">
+               <children>
+                  <ToggleButton fx:id="Eraser" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" text="Eraser">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/rsz_eraser_icon.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></ToggleButton>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="back" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="Back">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/up%20(1)%20-%20Copy.png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="front" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Front">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/up%20(1).png" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="34.0" prefWidth="179.0" spacing="10.0">
+               <children>
+                  <ToggleButton fx:id="intersection" mnemonicParsing="false" prefHeight="31.0" prefWidth="36.0" text="Intersection">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/imageedit_8_4685835558.gif" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </ToggleButton>
+                  <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="6.0" />
+                  <ToggleButton fx:id="Anim" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" text="Animation">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Mohzmed/Downloads/imageedit_7_4292549833.gif" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </ToggleButton>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="pane" prefHeight="432.0" prefWidth="794.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

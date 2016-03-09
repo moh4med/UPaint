@@ -1,0 +1,8 @@
+*Hisotry
+*load Image
+*Printscr
+*drag&drop
+*Copy&Paste
+*Animation (Select Animation)
+*more Shapes
+
